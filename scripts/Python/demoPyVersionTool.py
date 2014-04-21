@@ -11,14 +11,14 @@ except:
 try:
     import os
     version_data['os module'] = True
-    version_data['3ds Max 2014 path environment variable'] = os.getenv("ADSK_3DSMAX_x64_2014")
+    version_data['3ds Max 2015 path environment variable'] = os.getenv("ADSK_3DSMAX_x64_2015")
 except:
     version_data['os module'] = False
 
 try:
     import MaxPlus
     version_data['MaxPlus module'] = True
-    version_data['3ds Max install path'] = MaxPlus.PathManager.MaxSysRootDir
+    version_data['3ds Max install path'] = MaxPlus.PathManager.GetMaxSysRootDir()
     version_data['MaxPlus version'] = MaxPlus.__version__
 except:
     version_data['MaxPlus module'] = False
