@@ -218,6 +218,7 @@ Birth_Texture
 BitArray
 BitmapControl
 BitmapIO
+BitmapPagerData
 Bitmap_Photometric_Paths
 Bitmaptexture
 Blackman
@@ -322,7 +323,7 @@ CATWeightShift
 CAT_LiftOffset
 CAT_LiftPlantMod
 CAT_ParamBlock.OrigName
-CAT_ParamBlock.default
+CAT_ParamBlock.name
 CAT_ParamBlock.type
 CAT_ParamBlock.ui
 CAT_UIItem.Array
@@ -332,12 +333,12 @@ CAT_UIItem.alpha
 CAT_UIItem.checked
 CAT_UIItem.color
 CAT_UIItem.default
+CAT_UIItem.enabled
 CAT_UIItem.height
 CAT_UIItem.highlightColor
 CAT_UIItem.items
 CAT_UIItem.labelOnTop
 CAT_UIItem.name
-CAT_UIItem.offset
 CAT_UIItem.orient
 CAT_UIItem.range
 CAT_UIItem.ticks
@@ -347,7 +348,7 @@ CAT_UIItem.width
 CATp3
 CCRootClass
 CIN
-CINCfg.BlackPoint
+CINCfg.WhitePoint
 CMB
 COM_DCOM_Server_Control
 CRTCheckAssert
@@ -670,7 +671,7 @@ DistanceSelectSpinnerCallback.getValue
 DistanceSelectSpinnerCallback.onButtonUp
 Distortion
 Distortion__lume
-DontShowAgainDialog.default
+DontShowAgainDialog.DoDialog
 DontShowAgainDialog.messageStr
 DontShowAgainDialog.notAgain
 DontShowAgainDialog.retval
@@ -684,6 +685,7 @@ Drag
 DragMod
 Dummy
 DummyRadMapClass
+DummyUnknown_0X00000B20
 DwgAlwaysEqualFilter
 DwgBlockDefinitionFilter
 DwgBlockInsAsNodeHierarchyFilter
@@ -856,7 +858,6 @@ Filters.CanSwitchTo_Border
 Filters.CanSwitchTo_Edge
 Filters.CanSwitchTo_Element
 Filters.CanSwitchTo_Face
-Filters.CanSwitchTo_Patch
 Filters.CanSwitchTo_Polygon
 Filters.CanSwitchTo_Segment
 Filters.CanSwitchTo_Spline
@@ -880,6 +881,7 @@ Filters.Is_EditPolySpecifyLevel
 Filters.Is_EditSpline
 Filters.Is_EditSplineSpecifyLevel
 Filters.Is_Grid
+Filters.Is_IKChain
 Filters.Is_Light
 Filters.Is_MeshSelect
 Filters.Is_NURBS
@@ -1271,6 +1273,8 @@ JWorldData
 Join_Bodies
 Joint_Angle_Deformer
 Joystick_Input_Device
+Joystick_Input_DeviceUnknown_0X00001050
+Joystick_Input_DeviceUnknown_0X00001060
 Keep_Apart
 Kelvin_Temperature_Color
 KeyVal_struct.keyVal
@@ -1283,7 +1287,6 @@ LE.addMSec
 LE.addRay
 LE.addRing
 LE.addStar
-LE.addStreak
 LE.deleteElement
 LE.deleteElementByName
 LE.deleteLight
@@ -1291,6 +1294,7 @@ LE.deleteLightByName
 LE.lightIndex
 LE.lightName
 LE.load
+LE.numLights
 LE.save
 LOD
 LOD_Controller
@@ -1400,12 +1404,12 @@ ListViewOps.ClearColumns
 ListViewOps.ClearLvItems
 ListViewOps.DeleteLvItem
 ListViewOps.GetLvItemByname
+ListViewOps.GetLvItemCheck
 ListViewOps.GetLvItemCount
 ListViewOps.GetLvItemName
 ListViewOps.GetLvItems
 ListViewOps.GetLvSelection
 ListViewOps.GetLvSingleSelected
-ListViewOps.GetSelectedIndex
 ListViewOps.HighLightLvItem
 ListViewOps.InitImageList
 ListViewOps.MXSColor_to_dotNetColor
@@ -1475,6 +1479,8 @@ MAXWrapper
 MAXWrapperNonRefTarg
 MAX_File_Finder
 MIDI_Device
+MIDI_DeviceUnknown_0X00001050
+MIDI_DeviceUnknown_0X00001060
 MMClean
 MPG
 MPassCamEffect
@@ -1533,9 +1539,9 @@ MasterPointController
 Master_Controller_plugin_not_found
 Master_Motion_Clip
 Master_Point_Controller
-MatEditor.close
 MatEditor.isOpen
 MatEditor.mode
+MatEditor.open
 MatchPattern
 MaterialBrowseDlg
 MaterialByElement
@@ -1666,6 +1672,8 @@ Motor
 MotorMod
 MouseTool
 Mouse_Input_Device
+Mouse_Input_DeviceUnknown_0X00001050
+Mouse_Input_DeviceUnknown_0X00001060
 MrmMod
 MtlBaseLib
 MtlButtonControl
@@ -1682,7 +1690,7 @@ MultiEdit_ControlInfo_struct.controlName
 MultiEdit_ControlInfo_struct.controlTooltip
 MultiEdit_ControlInfo_struct.controlValLookup
 MultiEdit_ControlInfo_struct.keyVal
-MultiEdit_ControlInfo_struct.paramIdent
+MultiEdit_ControlInfo_struct.paramValArray
 MultiLayer
 MultiListBoxControl
 MultiMaterialClass
@@ -1890,12 +1898,12 @@ ObjectPaintStruct.MotionTypeCallback
 ObjectPaintStruct.NodeDialogOpen
 ObjectPaintStruct.NodeNames
 ObjectPaintStruct.ObjectPaintPickObject
+ObjectPaintStruct.OpenNodeDialog
 ObjectPaintStruct.SetSelectedObject
 ObjectPaintStruct.UseIndexCallback
 ObjectPaintStruct.UseObjectText
 ObjectPaintStruct.hasStartedSpacingButtonDown
 ObjectPaintStruct.nodeDialogPos
-ObjectPaintStruct.nodes
 ObjectParameter
 ObjectSet
 Object_Color
@@ -2217,6 +2225,7 @@ PolyBoostStruct.Flowfunc
 PolyBoostStruct.FreeformApplySettings
 PolyBoostStruct.FreeformLoadDefaultSettings
 PolyBoostStruct.FreeformLoadSettings
+PolyBoostStruct.FreeformSaveSettings
 PolyBoostStruct.FreeformSetDefaultSettings
 PolyBoostStruct.FreeformWriteSettings
 PolyBoostStruct.GetSizefunc
@@ -2273,7 +2282,6 @@ PolyBoostStruct.SkinLoopRing
 PolyBoostStruct.SkinShrink
 PolyBoostStruct.SmartRotate
 PolyBoostStruct.Smoothfunc
-PolyBoostStruct.SolveSurface
 PolyBoostStruct.SpinnerChange
 PolyBoostStruct.StepLast
 PolyBoostStruct.StepLoopSelect
@@ -2344,6 +2352,7 @@ PolyToolsUIstruct.PDDistanceType
 PolyToolsUIstruct.PDDrawtype
 PolyToolsUIstruct.PDOffset
 PolyToolsUIstruct.PDPickButton
+PolyToolsUIstruct.PDSetFlow
 PolyToolsUIstruct.PDSolveAngle
 PolyToolsUIstruct.PDSolveQuads
 PolyToolsUIstruct.PDSurfQuads
@@ -2388,7 +2397,6 @@ PolyToolsUIstruct.SculptBrushsize
 PolyToolsUIstruct.SculptButtons
 PolyToolsUIstruct.SculptCap
 PolyToolsUIstruct.SculptDirection
-PolyToolsUIstruct.SculptHasBuffer
 PolyToolsUIstruct.SculptNoiseIterations
 PolyToolsUIstruct.SculptNoiseScale
 PolyToolsUIstruct.SculptNoiseSeed
@@ -2511,11 +2519,8 @@ PushPrompt
 PushSpaceWarp
 PxRolloutInfo_struct.rolloutRolledUp
 Pyramid
+PyramidUnknown_0X00000B20
 PythonHost
-python.Execute
-python.ExecuteFile
-python.Init
-python.GetLastError
 QCompA
 QTime
 QuadMesh
@@ -2635,7 +2640,7 @@ Retimer
 RetimerCtrl
 Ribbon_Modeling.ColorToPoint3
 Ribbon_Modeling.CurrentConstraintsIndex
-Ribbon_Modeling.EditSoftSelectionMode
+Ribbon_Modeling.DisplacementToggle
 Ribbon_Modeling.FindModifierIndex
 Ribbon_Modeling.GetModifyButtonText
 Ribbon_Modeling.GetSOEnum
@@ -2769,6 +2774,7 @@ Scene_Effect_Loader
 Scene_Effect_LoaderUtilityPlugin
 Scene_State
 Scene_State_Manager
+Scene_State_ManagerUnknown_0X0000900F
 SchematicViewUtility
 Script_Operator
 Script_Test
@@ -3058,6 +3064,19 @@ StandardMaterialClass
 StandardTextureOutput
 StandardUVGen
 StandardXYZGen
+Standard_16_bit
+Standard_16_bit_Grayscale
+Standard_1_bit
+Standard_24_bit_LogLUV_Storage
+Standard_24_bit_LogLUV_Storage_with_alpha
+Standard_32_bit
+Standard_32_bit_Floating_Point_Storage
+Standard_32_bit_Floating_Point_Storage_Grayscale
+Standard_32_bit_LogLUV_Storage
+Standard_32_bit_RealPixel_Storage
+Standard_64_bit_Storage
+Standard_8_bit_Grayscale
+Standard_8_bit_Paletted
 Standard_Flow
 Standardmaterial
 Standin_for_missing_MultiPass_Camera_Effect_Plugin
@@ -3098,6 +3117,7 @@ SubstituteMod
 SubstituteObject
 Substitute_Manager
 Substitute_Object
+Summed_area
 Sunlight
 Sunlight_Daylight_Slave_Controller
 Sunlight_Daylight_Slave_ControllerMatrix3Controller
@@ -3302,7 +3322,7 @@ VCview2DFitTextureToView
 VCview2DFullSize
 VCview2DWireToggle
 VDM
-VFB_ViewportInfo.entries_
+VFB_ViewportInfo.totalVptNum_
 VFB_ViewportInfoEntry.index_
 VFB_ViewportInfoEntry.type_
 VFB_ViewportInfoEntry.viewId_
@@ -3311,7 +3331,7 @@ VFB_methods_struct.CommitRenderChanges
 VFB_methods_struct.CompareViewportInfo
 VFB_methods_struct.DeepCompare
 VFB_methods_struct.GetRolloutSize
-VFB_methods_struct.GetViewportName
+VFB_methods_struct.GetViewportInfo
 VFB_methods_struct.HandleRenderModeDropdown
 VFB_methods_struct.LookupTableComparator
 VFB_methods_struct.LookupTableLookup
@@ -3408,8 +3428,8 @@ VzObjectTable
 VzObjectTableRecord
 WAVsound.End
 WAVsound.filename
+WAVsound.isPlaying
 WAVsound.mute
-WAVsound.scrub
 WAVsound.start
 WM3_AddProgressiveMorphNode
 WM3_CreateMarker
@@ -3856,6 +3876,7 @@ biped.RetargetToBaseLayer
 biped.RetargetToReferenceBiped
 biped.addFootprint
 biped.addMultipleFootprints
+biped.addNewKey
 biped.addPrefClip
 biped.adjustTalentPose
 biped.attachXtra
@@ -3943,7 +3964,6 @@ biped.loadBipedAnimationLayer
 biped.loadBipedBaseAnimationLayer
 biped.loadCopyPasteFile
 biped.loadFigFile
-biped.loadFigJustTwists
 biped.loadFigNoTwists
 biped.loadMocapFile
 biped.loadStpFile
@@ -4025,7 +4045,7 @@ bit.intAsChar
 bit.intAsFloat
 bit.intAsHex
 bit.isFinite
-bit.isNAN
+bit.not
 bit.or
 bit.set
 bit.shift
@@ -4040,12 +4060,12 @@ bmpio
 boolObj.GetBoolCutType
 boolObj.GetBoolOp
 boolObj.GetDisplayResult
-boolObj.GetOperandSel
 boolObj.GetOptimize
 boolObj.GetShowHiddenOps
 boolObj.GetUpdateMode
 boolObj.SetBoolCutType
 boolObj.SetBoolOp
+boolObj.SetDisplayResult
 boolObj.SetOperandSel
 boolObj.SetOptimize
 boolObj.SetShowHiddenOps
@@ -4062,9 +4082,9 @@ brown
 bsearch
 buildTVFaces
 buildVCFaces
+cacheOps.ClearChannel
 cacheOps.DisableBelow
 cacheOps.EnableBelow
-cacheOps.RecordCache
 cacheOps.SetChannel
 cacheOps.Unload
 cacheOps.reload
@@ -4175,9 +4195,9 @@ crowds.genlocations
 crowds.genrotations
 crowds.genscales
 crowds.incrementPriorities
+crowds.linkObjects
 crowds.scatterall
 crowds.smooth
-crowds.solve
 cubic
 cui.GetDir
 cui.commandPanelOpen
@@ -4202,6 +4222,7 @@ custAttributes.add
 custAttributes.count
 custAttributes.delete
 custAttributes.deleteDef
+custAttributes.get
 custAttributes.getDef
 custAttributes.getDefClass
 custAttributes.getDefData
@@ -4213,16 +4234,15 @@ custAttributes.getPBlockDefs
 custAttributes.getSceneDefs
 custAttributes.makeUnique
 custAttributes.redefine
-custAttributes.setDefData
 cwschannel.index
 cwschannel.value
 cwscomposite.objects
 cwskey.value
 cwsobject.channels
-cwsobject.hinge
 cwsobject.isVisible
 cwsobject.kind
 cwsobject.name
+cwsobject.operator
 cwsobject.order
 cwsobject.parent
 cwsobject.stencil
@@ -4236,13 +4256,13 @@ delegates.ComputingBiped
 delegates.bboxDisplay
 delegates.isAssignmentActive
 delegates.isComputing
+delegates.lineDisplay
 delegates.prevVelocity
 delegates.reactToMe
 delegates.simTransform
 delegates.speed
 delegates.sphereDisplay
 delegates.startVelocity
-delegates.textDisplay
 delegates.velocity
 delete
 deleteAllChangeHandlers
@@ -4302,7 +4322,7 @@ disableRefMsgs
 disconnect
 displacementToPreset
 display
-displayColor.shaded
+displayColor.wireFrame
 displayControlDialog
 displayGamma
 displaySafeFrames
@@ -4348,8 +4368,8 @@ enableUndo
 encryptFile
 encryptScript
 enumerateFiles
-envEffectsDialog.close
 envEffectsDialog.isOpen
+envEffectsDialog.open
 environmentMap
 eof
 escapeEnable
@@ -4392,7 +4412,7 @@ flatMirror
 flexOps.ClearEdgeVertices
 flexOps.GetNumberVertices
 flexOps.GetVertexWeight
-flexOps.SelectVertices
+flexOps.SetEdgeVertices
 flexOps.SetVertexWeights
 flexOps.isEdgeVertex
 flightstudioimage
@@ -4663,7 +4683,6 @@ gw.clearScreen
 gw.dualPlane
 gw.endTriangles
 gw.enlargeUpdateRect
-gw.getDriverString
 gw.getFlipped
 gw.getHitherCoord
 gw.getMaxLights
@@ -4692,6 +4711,7 @@ gw.querySupport
 gw.resetUpdateRect
 gw.setColor
 gw.setDirectXDisplayAllTriangle
+gw.setPos
 gw.setRndLimits
 gw.setSkipCount
 gw.setTransform
@@ -4754,7 +4774,6 @@ ik.getPrecedence
 ik.getRotThreshold
 ik.getStartTime
 ik.setAxisActive
-ik.setAxisDamping
 ik.setAxisEase
 ik.setAxisLimit
 ik.setAxisMax
@@ -4770,6 +4789,7 @@ ik.setIsTerminator
 ik.setIterations
 ik.setPinNode
 ik.setPosThreshold
+ik.setPrecedence
 ik.setRotThreshold
 ik.setStartTime
 illumRenderElement
@@ -4849,7 +4869,7 @@ joinSurfaces
 jpegio
 keyboard.altPressed
 keyboard.controlPressed
-keyboard.shiftPressed
+keyboard.escPressed
 length
 lengthInterp
 lengthTangent
@@ -5087,7 +5107,7 @@ maz
 mcrUtils.ValidMod
 measureOffset
 meditMaterials
-meditUtilities.getDefaultLibraryFile
+meditUtilities.Set_mrArchTemplate_ActiveMaterial_FromMaterialInMatlib
 meditUtilities.getDefaultMaterial
 meditUtilities.getDefaultsFile
 meditUtilities.isMaterialInUse
@@ -5110,6 +5130,7 @@ merge
 mergeMaxFile
 mesh
 meshGrid
+meshOps.attachList
 meshOps.autoEdge
 meshOps.autosmooth
 meshOps.break
@@ -5145,7 +5166,6 @@ meshOps.startWeldTarget
 meshOps.tessellate
 meshOps.unhideAll
 meshOps.unifyNormal
-meshOps.viewAlign
 meshOps.visibleEdge
 meshOps.weld
 meshop.applyUVWMap
@@ -5242,6 +5262,7 @@ meshop.getShowVNormals
 meshop.getSoftSel
 meshop.getSplitMesh
 meshop.getSubdivisionAngle
+meshop.getSubdivisionDisplacement
 meshop.getSubdivisionDistance
 meshop.getSubdivisionEdge
 meshop.getSubdivisionMaxLevels
@@ -5296,7 +5317,6 @@ meshop.setMapSupport
 meshop.setMapVert
 meshop.setNormalSize
 meshop.setNumCPVVerts
-meshop.setNumFaces
 meshop.setNumMapFaces
 meshop.setNumMapVerts
 meshop.setNumMaps
@@ -5712,8 +5732,8 @@ openlog
 optimize
 optimizeClipTransition
 optimizeTransitions
+options.oldPrintStyles
 options.printAllElements
-options.showGCStatus
 orange
 output
 outputTextColor
@@ -5766,6 +5786,7 @@ patch.getPatchType
 patch.getPatches
 patch.getShowInterior
 patch.getVec
+patch.getVecPatches
 patch.getVecVert
 patch.getVectors
 patch.getVert
@@ -5787,7 +5808,6 @@ patch.setMapSupport
 patch.setMapVert
 patch.setMeshSteps
 patch.setMeshStepsRender
-patch.setNumEdges
 patch.setNumMapPatches
 patch.setNumMapVerts
 patch.setNumMaps
@@ -5824,7 +5844,6 @@ patchOps.selectBySG
 patchOps.selectEdgeLoop
 patchOps.selectEdgeRing
 patchOps.selectOpenEdges
-patchOps.shrinkSelection
 patchOps.startAttach
 patchOps.startBevel
 patchOps.startBind
@@ -5832,6 +5851,7 @@ patchOps.startCopyTangent
 patchOps.startCreate
 patchOps.startExtrude
 patchOps.startFlipNormalMode
+patchOps.startPasteTangent
 patchOps.startWeldTarget
 patchOps.subdivide
 patchOps.toggleShadedFaces
@@ -5840,6 +5860,7 @@ patchOps.unhideAll
 patchOps.unifyNormal
 patchOps.weld
 path
+pathConfig.GetDir
 pathConfig.GetExchangeStorePlugInInstallPath
 pathConfig.SaveTo
 pathConfig.SetDir
@@ -5883,7 +5904,6 @@ pathConfig.removePathLeaf
 pathConfig.removePathTopParent
 pathConfig.removeProjectDirectoryCreateFilter
 pathConfig.resolvePathSymbols
-pathConfig.resolveUNC
 pathConfig.sessionPaths
 pathConfig.sessionPaths.add
 pathConfig.sessionPaths.count
@@ -5932,6 +5952,7 @@ point4_list
 point4_script
 polyOps.NamedSelCopy
 polyOps.NamedSelPaste
+polyOps.attachList
 polyOps.autosmooth
 polyOps.break
 polyOps.cap
@@ -5973,7 +5994,6 @@ polyOps.startWeldTarget
 polyOps.tessellate
 polyOps.unhide
 polyOps.update
-polyOps.viewAlign
 polyOps.weld
 polyop.applyUVWMap
 polyop.attach
@@ -6034,6 +6054,7 @@ polyop.getFaceEdges
 polyop.getFaceFlags
 polyop.getFaceMatID
 polyop.getFaceNormal
+polyop.getFaceSelection
 polyop.getFaceSmoothGroup
 polyop.getFaceVerts
 polyop.getFacesByFlag
@@ -6062,7 +6083,6 @@ polyop.getVert
 polyop.getVertFlags
 polyop.getVertSelection
 polyop.getVertsByColor
-polyop.getVertsByFlag
 polyop.getVertsUsedOnlyByFaces
 polyop.getVertsUsingEdge
 polyop.getVertsUsingFace
@@ -6158,10 +6178,10 @@ pxNodeKeys.SaveKeys
 pxNodeKeys.init
 pxNodeKeys.inode
 pxNodeKeys.posTimes
+pxNodeKeys.posx
 pxNodeKeys.posy
 pxNodeKeys.posz
 pxNodeKeys.rotTimes
-pxNodeKeys.rotx
 pxNodeKeys.roty
 pxNodeKeys.rotz
 px_multiedit_methods_struct.AddParamEntryToItems
@@ -6280,6 +6300,7 @@ registry.deleteValue
 registry.flushKey
 registry.getLastError
 registry.getParentKey
+registry.getSubKeyName
 registry.getSubKeyNames
 registry.getValueName
 registry.getValueNames
@@ -6289,7 +6310,6 @@ registry.isParentKeyOpen
 registry.openKey
 registry.queryInfoKey
 registry.queryValue
-registry.setValue
 releaseAllOLEObjects
 releaseOLEObject
 removeObject
@@ -6338,7 +6358,7 @@ renderHeight
 renderMap
 renderPixelAspect
 renderPresetMRUList
-renderSceneDialog.close
+renderSceneDialog.cancel
 renderSceneDialog.commit
 renderSceneDialog.isOpen
 renderSceneDialog.open
@@ -6347,11 +6367,11 @@ renderWidth
 renderer
 renderers.ClearDraftRenderer
 renderers.GetDraftRenderer
+renderers.activeShade
 renderers.current
 renderers.medit
 renderers.medit_locked
 renderers.production
-renderers.renderButtonText
 renderers.renderDialogMode
 reparameterize
 replace
@@ -6378,9 +6398,9 @@ rotation_list
 rotation_script
 s_rc2mxs.convertRC
 s_rc2mxs.dimStr
+s_rc2mxs.fac
 s_rc2mxs.fc
 s_rc2mxs.fltStr
-s_rc2mxs.isContinuation
 s_rc2mxs.rH
 s_rc2mxs.rW
 s_rc2mxs.rc
@@ -6408,6 +6428,7 @@ scanlineRender.autoReflectLevels
 scanlineRender.colorClampType
 scanlineRender.conserveMemory
 scanlineRender.enablePixelSampler
+scanlineRender.enableSSE
 scanlineRender.filterMaps
 scanlineRender.forceWireframe
 scanlineRender.imageBlurDuration
@@ -6419,10 +6440,9 @@ scanlineRender.objectBlurDuration
 scanlineRender.objectBlurSamples
 scanlineRender.objectBlurSubdivisions
 scanlineRender.objectMotionBlur
-scanlineRender.shadows
 scanlineRender.wireThickness
 sceneMaterials
-schematicView.close
+schematicView.getSchematicViewName
 schematicView.numSchematicViews
 schematicView.open
 schematicView.zoomSelected
@@ -6484,11 +6504,11 @@ setIndexedPixels
 setIndexedProperty
 setInheritanceFlags
 setIniForceUTF16Default
+setKey.bufferPresent
 setKey.commitBuffer
 setKey.revertBuffer
 setKey.subAnimBufferPresent
 setKey.subAnimCommitBuffer
-setKey.subAnimRevertBuffer
 setKnot
 setKnotPoint
 setKnotSelection
@@ -6717,7 +6737,6 @@ skinOps.selectChild
 skinOps.selectCrossSection
 skinOps.selectEndPoint
 skinOps.selectGizmo
-skinOps.selectGizmoType
 skinOps.selectMirrorBones
 skinOps.selectNextBone
 skinOps.selectNextSibling
@@ -6734,6 +6753,7 @@ skinOps.setSelectedBonePropEnvelopeVisible
 skinOps.setSelectedBonePropFalloff
 skinOps.setSelectedBonePropRelative
 skinOps.shrinkSelection
+skinOps.unNormalizeVertex
 skinOps.updateMirror
 skinOps.weightTool
 skipRenderedFrames
@@ -6799,7 +6819,6 @@ splineOps.reverse
 splineOps.selectByID
 splineOps.startAttach
 splineOps.startBind
-splineOps.startBreak
 splineOps.startChamfer
 splineOps.startConnect
 splineOps.startCopyTangent
@@ -6808,6 +6827,7 @@ splineOps.startCrossInsert
 splineOps.startCrossSection
 splineOps.startExtend
 splineOps.startFillet
+splineOps.startInsert
 splineOps.startIntersect
 splineOps.startOutline
 splineOps.startPasteTangent
@@ -6842,7 +6862,7 @@ superClassOf
 superclasses
 supportsTimeOperations
 surface
-surfaceArriveBhvr.getPos
+surfaceArriveBhvr.getState
 swap
 sweep
 swirl
@@ -6859,6 +6879,7 @@ sxmlIO.exec
 sxmlIO.exec_time
 sxmlIO.getAddon
 sxmlIO.getAttribute
+sxmlIO.init
 sxmlIO.isAnimated
 sxmlIO.is_ik_ctrl
 sxmlIO.load
@@ -6875,16 +6896,15 @@ sxmlIO.wireParams
 sxmlIO.world
 sxmlIO.xml2cas
 sxmlIO.xml2ctrl
-sxmlIO.xml2obj
 sxmlIO.xml2subAnims
 sxmlIO.xmlCtrlDoc
 sxmlIO.xmlCtrlDocName
+symbolicPaths.addUserPath
 symbolicPaths.expandFileName
 symbolicPaths.getPathName
 symbolicPaths.getPathValue
 symbolicPaths.getUserPathName
 symbolicPaths.getUserPathValue
-symbolicPaths.isPathName
 symbolicPaths.isUserPathName
 symbolicPaths.numPaths
 symbolicPaths.numUserPaths
@@ -6962,7 +6982,6 @@ theHold.GetBeginDepth
 theHold.GetGlobalPutCount
 theHold.Holding
 theHold.IsSuspended
-theHold.IsUndoDisabled
 theHold.Redoing
 theHold.Release
 theHold.Restore
@@ -6971,6 +6990,7 @@ theHold.Restoring
 theHold.Resume
 theHold.SuperAccept
 theHold.SuperBegin
+theHold.SuperCancel
 theHold.SuperLevel
 theHold.Suspend
 theHold.cancel
@@ -7030,7 +7050,7 @@ toolMode.selectionCenter
 toolMode.squashScale
 toolMode.uniformScale
 topBottomMat
-trackView.close
+trackView.clearFilter
 trackView.getTrackViewName
 trackView.numTrackViews
 trackView.open
@@ -7096,7 +7116,7 @@ usePreRendScript
 usedMaps
 uvwManipUtils.GetUVGen
 uvwManipUtils.GetUVGenFromMat
-uvwManipUtils.gizmoAxis
+uvwManipUtils.GetUVTransform
 uvwManipUtils.gizmoAxisTM
 uvwManipUtils.gizmoMatrix
 uvwManipUtils.isPhysicalScaleMapper
@@ -7139,7 +7159,6 @@ viewport.GetGridVisibility
 viewport.GetID
 viewport.GetLayout
 viewport.GetRegionRect
-viewport.GetRenderLevel
 viewport.GetScreenScaleFactor
 viewport.GetShowEdgeFaces
 viewport.GetTM
@@ -7185,6 +7204,7 @@ viewport.ZoomToBounds
 viewport.activeViewport
 viewport.activeViewportId
 viewport.getHWnd
+viewport.getType
 viewport.getViewportDib
 viewport.isEnabled
 viewport.numViews
@@ -7199,8 +7219,8 @@ windows.getChildrenHWND
 windows.getDesktopHWND
 windows.getHWNDData
 windows.getMAXHWND
-windows.getParentHWND
 windows.getWindowPos
+windows.postMessage
 windows.processPostedMessages
 windows.screenToClient
 windows.sendMessage
@@ -7212,13 +7232,13 @@ xrefPaths.add
 xrefPaths.count
 xrefPaths.delete
 xrefPaths.getFullFilePath
-xrefs.addNewXRefFile
 xrefs.addNewXRefObject
 xrefs.attemptUnresolvedXRefs
 xrefs.deleteAllXRefs
 xrefs.findUnresolvedXRefs
 xrefs.getXRefFile
 xrefs.getXRefFileCount
+xrefs.updateChangedXRefs
 y_axis
 yellow
 yesNoCancelBox
